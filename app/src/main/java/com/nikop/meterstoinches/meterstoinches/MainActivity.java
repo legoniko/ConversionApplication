@@ -20,6 +20,9 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinner;
     private int pos = 0;
 
+    private int hellworld;
+    private int thisIsCool;
+
     public void ifEmptyEdittext() {
         resultTextView.setText(R.string.error_message);
         resultTextView.setTextColor(Color.RED);
