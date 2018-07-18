@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MetersToInches</string>
+    <string name="result_name">Result</string>
+    <string name="convert_button">Convert</string>
+    <string name="clear_button">Clear</string>
+    <string name="enter_meters">Enter in Meters</string>
+    <string name="image_description">Picture of Ruler</string>
+    <string name="error_message">You must enter a number</string>
+    <string name="convert_button2">Inch To Meter</string>
+    <string-array name="Conversions">
+        <item>Meters to Inches</item>
+        <item>Inches to Meters</item>
+        <item>Feet to Yards</item>
+        <item>Yards to Feet</item>
+    </string-array>
+</resources>
