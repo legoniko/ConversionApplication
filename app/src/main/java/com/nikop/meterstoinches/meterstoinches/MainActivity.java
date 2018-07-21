@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
         resultTextView.setTextColor(Color.RED);
         resultTextView.setVisibility(View.VISIBLE);
     }
-
-
+    // This is the final change :)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
