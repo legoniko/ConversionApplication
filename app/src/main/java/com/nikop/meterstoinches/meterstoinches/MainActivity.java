@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         resultTextView.setVisibility(View.VISIBLE);
     }
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
