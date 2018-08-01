@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                 double result;
 
                 if (pos == 0) {
-                    // Conversion Logic
+                    // Conversion Logic for meters to inches
                     double oneMeter=39.37;
 
                     if (enterUnit.getText().toString().equals("")) {
@@ -110,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
                     if (enterUnit.getText().toString().equals("")) {
                         ifEmptyEdittext();
                     } else {
-                        double inchValue=Double.parseDouble(enterUnit.getText().toString());
-                        result=inchValue * oneFoot;
+                        double yardValue=Double.parseDouble(enterUnit.getText().toString());
+                        result=yardValue * oneFoot;
 
                         resultTextView.setText(String.format("%.2f", result) + " yards");
                         resultTextView.setTextColor(Color.BLACK);
@@ -132,6 +132,36 @@ public class MainActivity extends AppCompatActivity {
                         } else {
                             resultTextView.setText(String.format("%.2f", result) + " feet");
                         }
+                        resultTextView.setTextColor(Color.BLACK);
+                        resultTextView.setVisibility(View.VISIBLE);
+                    }
+                } else if (pos == 4) {
+                    // Conversion logic for inches to feet
+                    double oneInch=0.083333;
+
+                    if (enterUnit.getText().toString().equals("")) {
+                        ifEmptyEdittext();;
+                    }  else {
+                        double inchValue=Double.parseDouble(enterUnit.getText().toString());
+                        result=inchValue * oneInch;
+
+                        // Use string format to round number
+                        resultTextView.setText(String.format("%.2f", result) + " yards");
+                        resultTextView.setTextColor(Color.BLACK);
+                        resultTextView.setVisibility(View.VISIBLE);
+                    }
+                } else if (pos == 5) {
+                    // Conversion logic for feet to inches
+                    double oneFoot=12;
+
+                    if (enterUnit.getText().toString().equals("")) {
+                        ifEmptyEdittext();;
+                    }  else {
+                        double inchValue=Double.parseDouble(enterUnit.getText().toString());
+                        result=inchValue * oneFoot;
+
+                        // Use string format to round number
+                        resultTextView.setText(String.format("%.2f", result) + " yards");
                         resultTextView.setTextColor(Color.BLACK);
                         resultTextView.setVisibility(View.VISIBLE);
                     }

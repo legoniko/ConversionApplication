@@ -12,5 +12,7 @@
         <item>Inches to Meters</item>
         <item>Feet to Yards</item>
         <item>Yards to Feet</item>
+        <item>Inches to Feet</item>
+        <item>Feet to Inches</item>
     </string-array>
 </resources>
