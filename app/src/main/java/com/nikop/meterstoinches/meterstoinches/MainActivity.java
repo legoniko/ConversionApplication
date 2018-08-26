@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView resultTextView;
     private Button clearButton;
     private Spinner spinner;
+    private Spinner spinner2;
     private int pos = 0;
 
     public void ifEmptyEdittext() {
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         resultTextView=findViewById(R.id.resultId);
         clearButton=findViewById(R.id.clearButtonId);
         spinner=findViewById(R.id.spinnerID);
+        spinner2=findViewById(R.id.spinner2ID);
 
         /* Populating the spinner with our @string/Conversions
            Specifying that our spinner will be a dropdown menu
@@ -59,7 +61,33 @@ public class MainActivity extends AppCompatActivity {
                     enterUnit.setHint("Enter in Feet");
                 } else if (pos == 3) {
                     enterUnit.setHint("Enter in Yards");
+                } else if (pos == 4) {
+                    enterUnit.setHint("Enter in Inches");
+                } else if (pos == 5) {
+                    enterUnit.setHint("Enter in Feet");
                 }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+         /* Populating the spinner with our @string/Conversions
+           Specifying that our spinner will be a dropdown menu
+           Assigning adapter to spinner
+        */
+        ArrayAdapter<CharSequence> adapter1=ArrayAdapter.createFromResource(this,
+                R.array.Conversions, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter1);
+
+        // Event for the Spinner so we know that it is selected
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
             }
 
             @Override
