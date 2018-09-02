@@ -14,9 +14,5 @@
         <item>Yards to Feet</item>
         <item>Inches to Feet</item>
         <item>Feet to Inches</item>
-        <item>Meters</item>
-    </string-array>
-    <string-array name="ConversionsV2">
-        <item>Inches</item>
     </string-array>
 </resources>
